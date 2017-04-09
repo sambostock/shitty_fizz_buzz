@@ -14,6 +14,6 @@ def fizz_buzz(n)
   write ', ' if n > 5; write '6' if n >= 6; write ', ' if n > 6
   write '7' if n >= 7; write ', ' if n > 7; write '8' if n >= 8
   write ', ' if n > 8; write '9' if n >= 9; write ', ' if n > 9
-  write '10' if n >= 10; write ', ' if n > 10
+  write '10' if n = 10;
 end
 ```
