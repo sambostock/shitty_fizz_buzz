@@ -8,6 +8,10 @@ For example, given a max of `10`, the following should be generated:
 
 ```ruby
 def fizz_buzz(n)
+  unless n.between?(1, 10)
+    raise RangeError, "Can only Fizz Buzz between 1-10, not #{n}"
+  end
+
   write '1' if n >= 1; write ', ' if n > 1; write '2' if n >= 2
   write ', ' if n > 2; write '3' if n >= 3; write ', ' if n > 3
   write '4' if n >= 4; write ', ' if n > 4; write '5' if n >= 5
